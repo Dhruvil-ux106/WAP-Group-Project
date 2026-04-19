@@ -1,3 +1,12 @@
+import { playlists } from "../data/data";
+import Card from "./components/Card";
+
 export default function Home() {
-  return <h1 style={{ color: "white" }}>Home</h1>;
+  return (
+    <div style={{ padding: "20px" }}>
+      {playlists.map((p) => (
+        <Card key={p.id} title={p.title} />
+      ))}
+    </div>
+  );
 }
