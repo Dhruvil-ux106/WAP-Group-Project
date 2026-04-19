@@ -1,5 +1,6 @@
 import Sidebar from "./Components/Sidebar";
-import Navbar from "./Components/Navbar"; // ADD THIS
+import Navbar from "./Components/Navbar";
+import Player from "./Components/Player"; 
 
 export default function App() {
   return (
@@ -7,10 +8,11 @@ export default function App() {
       <Sidebar />
 
       <div style={{ flex: 1 }}>
-        <Navbar />   {/* ADD HERE */}
+        <Navbar />
         <div>Main</div>
       </div>
 
+      <Player /> {/* ADD HERE */}
     </div>
   );
 }
