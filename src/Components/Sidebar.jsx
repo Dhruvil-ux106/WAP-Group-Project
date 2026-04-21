@@ -13,7 +13,7 @@ export default function Sidebar() {
         height: "100vh"
       }}
     >
-      <h2 style={{ marginBottom: "20px", fontSize: isMobile ? "16px" : "22px" }}>
+      <h2 style={{ marginBottom: "30px", fontSize: isMobile ? "16px" : "22px" }}>
         Spotify
       </h2>
 

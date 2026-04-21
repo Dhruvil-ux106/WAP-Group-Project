@@ -3,13 +3,23 @@ export default function Card({ title, onClick }) {
     <div
       onClick={onClick}
       style={{
-  background: "#181818",
-  padding: "20px",
-  margin: "10px",
-  borderRadius: "8px"
-}}
+        background: "#181818",
+        padding: "15px",
+        borderRadius: "8px",
+        color: "white",
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
+      onMouseOver={(e) => {
+        e.currentTarget.style.background = "#282828";
+        e.currentTarget.style.transform = "scale(1.05)";
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.background = "#181818";
+        e.currentTarget.style.transform = "scale(1)";
+      }}
     >
-      {title}
+     <p style={{ fontWeight: "bold", fontSize: "14px" }}>{title}</p>
     </div>
   );
 }
