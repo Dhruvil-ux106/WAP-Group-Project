@@ -1,4 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap");
+
+* {
+box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  background: #121212;
+margin: 0;
+background: #0c0c0c;
+color: #fff;
+font-family: "Sora", "Segoe UI", sans-serif;
+}
+
+button,
+input {
+font: inherit;
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+background: #3a3a3a;
+border-radius: 999px;
 }
